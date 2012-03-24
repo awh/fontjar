@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.gnuminous</groupId>
+        <artifactId>fontjar</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <groupId>org.gnuminous.font</groupId>
+    <artifactId>org.gnuminous.font.gentiumplus</artifactId>
+    <version>1.0.0</version>
+    <name>Gentium Plus Font</name>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <addMavenDescriptor>false</addMavenDescriptor>
+                        <manifestSections>
+                            <manifestSection>
+                                <Name>org/gnuminous/font/gentiumplus/GentiumPlus-I.ttf</Name>
+                                <manifestEntries>
+                                    <Content-Type>application/x-font</Content-Type>
+                                </manifestEntries>
+                            </manifestSection>
+                            <manifestSection>
+                                <Name>org/gnuminous/font/gentiumplus/GentiumPlus-R.ttf</Name>
+                                <manifestEntries>
+                                    <Content-Type>application/x-font</Content-Type>
+                                </manifestEntries>
+                            </manifestSection>
+                        </manifestSections>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
